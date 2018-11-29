@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="assignment4-liti1731.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"/>
+	<title>The coffee shop</title>
+</head>
+<body>
+<!--********cashier****************************-->
+    <div id="cashier">
+    	<h1>Cashier</h1>
+    	<button onclick="espresso()">Espresso | 27kr</button>
+    	<button onclick="latte()">Latte | 40kr</button>
+    	<button onclick="cappuccino()">Cappuccino | 35kr</button>
+    	<div id=cashierList>
+           <p></p>
+        </div>
+        <h3 id=total></h3>
+    	<button onclick="finishOrder()">Finish order</button>
+    </div>
+
+<!--**********barista**************************-->
+    <div id="barista">
+    	<h1>Barista</h1>
+    	<button onclick="nextDrink()">Next drink</button>
+    	<h2>Currently brewing:</h2>
+        <div id=highlight>
+            <p></p>
+        </div>
+        <hr/>
+        <div id=baristaList>
+           <p></p>
+        </div>
+    </div>   
+
+<!--*********manager***************************-->
+    <div id="manager">
+    	<h1>Manager</h1>
+        <h3></h3>
+        <div id=managerPrice>
+            <h3></h3>
+        </div>
+    	<h2>Today's orders</h2>
+    	<p id=managerList></p>
+    </div>
+    <script src="assignment4-liti1731.js"></script>
+</body>
+</html>
